@@ -14,7 +14,7 @@ then
    sudo mpg321 -q beethoven.mp3
 elif [ "$1" == "wakeup" ]
 then
-   sudo mpg321 -q wakeup.mp3
+   sudo mpg321 -q bird.mp3
 elif [ "$1" == "sleep" ]
 then
    sudo mpg321 -q sleep1.mp3
