@@ -1,0 +1,43 @@
+#!/bin/bash
+   sudo pkill -x mpg321
+if [ "$1" == "rain" ]
+then
+   sudo mpg321 -q rain.mp3
+elif [ "$1" == "mozart" ]
+then
+   sudo mpg321 -q mozart.mp3
+elif [ "$1" == "yiruma" ]
+then
+   sudo mpg321 -q Yiruma.mp3
+elif [ "$1" == "beethoven" ]
+then
+   sudo mpg321 -q beethoven.mp3
+elif [ "$1" == "wakeup" ]
+then
+   sudo mpg321 -q wakeup.mp3
+elif [ "$1" == "sleep" ]
+then
+   sudo mpg321 -q sleep1.mp3
+elif [ "$1" == "bath" ]
+then
+   sudo mpg321 -q sleep2.mp3
+elif [ "$1" == "next" ]
+then
+   sudo killall -x mpv 
+   sudo pkill -x mpv 
+else 
+   sudo pkill -x mpg321
+   sudo pkill -x mpsyt
+   sudo pkill -x mpsyt
+   sudo pkill -x mpv
+   sudo pkill -x mpv
+   sudo pkill -x mpv
+   sudo killall -x mpv
+   sudo killall -x mpv
+   sudo killall -x mpv
+   [[ $(pgrep "mpv") ]] && sudo pkill "mpv"
+   sudo kill $(ps aux | grep './streamMedia' | awk '{print $2}')
+   sudo kill $(ps aux | grep './streamMedia' | awk '{print $2}')
+
+fi
+
